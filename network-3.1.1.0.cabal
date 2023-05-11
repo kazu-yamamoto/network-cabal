@@ -81,7 +81,7 @@ library
     Network.Socket.Unix
 
   build-depends:
-    base >= 4.7 && < 5,
+    base >= 4.7 && < 4.17,
     bytestring == 0.10.*,
     deepseq
 
@@ -129,7 +129,7 @@ test-suite spec
   --     both packages to a small enough version range.
   build-tools: hspec-discover >= 2.6
   build-depends:
-    base >= 4.7 && < 5,
+    base >= 4.7 && < 4.17,
     bytestring,
     directory,
     HUnit,
@@ -144,7 +144,7 @@ test-suite doctests
   type: exitcode-stdio-1.0
 
   build-depends:
-    base >= 4.7 && < 5,
+    base >= 4.7 && < 4.17,
     doctest >= 0.10.1,
     network
 
